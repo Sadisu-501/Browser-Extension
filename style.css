@@ -8,7 +8,7 @@
 
 :root {
   --body-color: #edf4fa;
-  --primary-text: #667083;
+  --primary-text: #051c47;
   --secondary-text: #5e6777;
   --card-background: #ffffff;
   --card-border: #dce7f1;
@@ -31,8 +31,10 @@ body {
   background-color: var(--body-color);
   margin: 1rem 4rem;
   font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
 }
 
+/* header section styles */
 header {
   background-color: white;
   border-radius: 10px;
@@ -54,12 +56,20 @@ header {
 ion-icon {
   font-size: 1.5rem;
   color: var(--accent-color);
+  cursor: pointer;
 }
+
 .moon ion-icon {
   background-color: var(--light-gray);
   padding: 3px;
   color: var(--secondary-text);
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.moon ion-icon:hover {
+  background-color: var(--muted-text);
+  color: var(--card-background);
 }
 
 /* nav */
@@ -67,5 +77,36 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  transition: all 0.5s ease;
+}
+nav h3 {
+  color: var(--primary-text);
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  background-color: var(--card-background);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* nav hover state */
+.nav-links a:hover {
+  color: var(--muted-text);
+}
+.active {
+  background-color: var(--accent-color);
+  color: var(--card-background);
+}
+nav .active:hover {
+  background-color: #e36056;
+  color: var(--card-background);
 }
