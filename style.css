@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #edf4fa;
+  --primary-text: #667083;
+  --secondary-text: #5e6777;
+  --card-background: #ffffff;
+  --card-border: #dce7f1;
+  --accent-color: #c9281f;
+  --light-gray: #d5d5d5;
+  --muted-text: #8d95a5;
+  /* cards */
+  --card-1: #cde6c7;
+  --card-2: #bee6f4;
+  --card-3: #f8d1d5;
+  --card-4: #d8c0f0;
+  --card-5: #c9c4f8;
+  --card-6: #bcefff;
+  --card-7: #ffdcc7;
+  --card-8: #bdf3e3;
+  --card-9: #b8f5b3;
+}
+
+body {
+  background-color: var(--body-color);
+  margin: 1rem 4rem;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  background-color: white;
+  border-radius: 10px;
+  color: var(--primary-text);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.top-icon-wrapper,
+.top-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+}
+.top-icon {
+  gap: 0.5rem;
+}
+
+ion-icon {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+.moon ion-icon {
+  background-color: var(--light-gray);
+  padding: 3px;
+  color: var(--secondary-text);
+  border-radius: 5px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
