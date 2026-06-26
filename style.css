@@ -82,6 +82,7 @@ nav {
 }
 nav h3 {
   color: var(--primary-text);
+  font-size: 1.5rem;
 }
 .nav-links {
   display: flex;
@@ -109,4 +110,22 @@ nav a {
 nav .active:hover {
   background-color: #e36056;
   color: var(--card-background);
+}
+
+/* main-container */
+.main-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 1rem;
+  /* justify-content: center; */
+  margin: 1rem 0;
+}
+.card-body {
+  background-color: red;
+}
+.card-contents {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
 }
