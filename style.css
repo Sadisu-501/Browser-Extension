@@ -218,6 +218,10 @@ nav .active:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+.checkbox-apple input[type="checkbox"]:checked + label {
+  background: linear-gradient(#921610, #be2a20);
+}
+
 .yep {
   position: absolute;
   top: 0;
